@@ -1,0 +1,75 @@
+<!DOCTYPE html> 
+<!--an instruction for the webbrowser to know witch version of html file is being used. Delaration for webbrower that this is an html5 file-->
+<html>
+    <head><!--tags are elements that make up a website, you have the head-, body-, paragraph-, source-, html- tag and so much more, see https://www.codecenter.nl/pr/tutorial/html/overzicht/tags/tagsalfabetisch-->
+        <title>My first HTML file</title> <!--naam website-->  
+        <link rel="stylesheet" type="text/css" href="style.css"> <!--link met css file wordt meestal toegevoegd in de header section. rel= to tell browser that we want to link a style sheet. type= we thel the html document that this is a css file. href= we tell the document where the css file is-->
+    </head>
+    <body>
+        <div class="container">
+            <div class="blog-post"> <!--container blog post-->
+                <h1>My first blog post</h1> <!--titel tag, niveau 1-->
+                <p class="date">Febuary 15, 2020 <!--parent element is "blog-post"-->
+                </p>
+                <h2>This is my first blog post</h2>
+                <p class="main-text"> <!--class= CSS class-->
+                    This is a very <strong>strong</strong> text, because it is <strong>bold</strong>.<br> <!--break: volgende alinea-->
+                    I would like to <em>emphasize</em> how important its is to follow this course until the end!<br>
+                    This is some <u>underlined</u> text.<br>
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc, 
+                </p> 
+                
+                <a href="http://www.udemy.com" target="_blank">Link to udemy</a><br><!--target ="_blank"opens link in new web page-->
+                <a href="logo.png" target="_blank">The HTML,CSS & Javascript Logo</a> <!--href = pad foto-->      
+                
+                <h2>HTML is amazing</h2>  <!--titel tag, niveau 2, kan max tot niveau 6 gaan.Titels worden kleiner en kleiner-->
+                <p  class="main-text"><!--nieuwe paragraaf, meestal gebruikt voor grote teksten, of kleine teksten die geen titel zijn-->
+                    Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc, 
+                </p> 
+                <img src="logo.png" alt="The HTML,CSS & Javascript Logo"><!--src:source = pad foto in pc, folder waar html file is bewaard-->             
+            </div>
+            
+                <div class="other-posts"> <!--container other posts-->
+
+                    <div class="other">
+                        The first other blog post
+                    </div>
+
+                     <div class="other">
+                        Yet another blog post
+                    </div>
+
+                    <div class="other">
+                        The best post ever: read this!
+                    </div>
+
+                </div>
+            <div class="clearfix"></div>  <!--speciale class zodat de foto van de auteur niet naasr de blogpost beland-->
+            
+            <div class="author-box"> <!--container autor-box-->
+                <img src="author.PNG" alt="The photo of the author">        
+                <p id="author-text">Fidalgo Pereira Pimentel Jonathan</p>                           
+            </div>                                          
+        </div>
+    </body>
+</html>
+<!--
+What is Brackets?
+
+Brackets is an open source code editor originally developed by Adobe. It may not have the same publicity as Atom, GitHub’s new lightweight editor, but it is a promising option for front-end developers.
+Brackets primarily aims at front-end developers and web designers. It is a code and text editor fully optimized for HTML, CSS, and JS.
+Brackets is available for Mac OS X, Windows and Linux.
+
+Major Features
+
+    Live Preview: It launches a new browser window showing the current page that not only does not require a manual refresh when you change a file, but also as you type. As such, Brackets feels like an extension of your browser’s Developer tools. This feature is incredibly useful, as it can combine the advantages of coding in the browser with those of an editor.
+
+    Quick Edit: When you are editing HTML code, if you click a tag with a corresponding CSS declaration situated in a linked file and hit Ctrl/Command+E, an inline editor appears allowing you to quickly edit that rule.
+
+    JSLint: It works with your JavaScript code upon saving, with its results displayed as a panel below the main editing window.
+    Brackets implements code completion especially meant for web designers and front-end development.
+    Additional features such as command line integration, multiple code selection, and quick open and quick find, add to the highlights of Brackets code editor.
+
+    https://www.designbombs.com/best-free-brackets-extensions/
+-->
+ 

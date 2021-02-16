@@ -1,0 +1,99 @@
+* {      /* * -->astarisk: all elements are afected by the selector* Works like global parameter. Good for making box models so you can define  marges en paddings */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.clearfix:after{ /*clear property is the counterpart van float*/ 
+    content: "";
+    display: table;
+    clear: both;
+}
+
+body{     /*These atributes work like global parameters, because almost all tags are inside the body section. */
+    font-family: Helvetica Neue, Arial;
+    font-size: 18px;
+}
+
+h1,h2{  /*ctrl+e on color attribute to change color with dynamic color changer */
+    color: #32cc67; /*color is the property and green is the value; color: green; dubbelklik + ctrl+E en gebruik RGB color value selector voor een meer nauweuriker kleur in te stellen. Resultaat wordt in hexadecimaal uitgeschreven */
+    font-family: Helvetica Neue, Arial; /*helvetica is the first style choise, arial is the second. When a brower does not reconise one style it will reconise the second one. Windows doest not reconise the font-family Helvetica Neue */   
+}
+
+h1 { 
+    font-size: 50px; /*height header 1 Overide font size */
+    margin-bottom: 20px;
+}
+
+h2 { 
+    font-size: 25px; /*height header 2 Overide font size */
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.main-text {     /*.main-text = class */
+    text-align: justify;
+    margin-bottom: 30px;
+}
+
+#author-text {   /*#author-text = id atribuut. Using id's is not a good practice because they only can be used once, that's why classes are most of the times used even if id's are used only once. Because we dont know what will happen donw the road with id's */
+    font-size: 22px;
+    float: left;
+    margin-top: 130px;
+    margin-left: 30px;
+}
+
+/*Aanmaken containers voor wegpagina te verdelen --> layoutboxes*/
+.container {
+    width: 1140px;
+    margin-left: auto;/**/
+    margin-right: auto;/**/
+    margin-top: 20px;/**/
+    /*margin: 20px auto 0 auto;/*De 3 bovenstaande regels code doen hetzelfde als deze 1 lijn code. structuur margin: top right bottom left*/
+}
+
+.blog-post {  /*background-color: #0000ff --> trick to see size of container;*/
+    width: 75%;
+    float: left; /*with float an element can be pushed to the left or the right, allowing other elements to wrap around it*/ 
+    padding-right: 30px;
+    position: relative;
+}
+
+.other-posts {  /*background-color: #00ff00 --> trick to see size of container;*/
+    width: 25%;
+    float: left; /*with float an element can be pushed to the left or the right, allowing other elements to wrap around it*/
+}
+
+.author-box {  /*background-color: #ffff00 --> trick to see size of container;*/
+    padding-top: 20px;
+    border-top: 1px solid #989898; /*Aanmaken verdeellijn, 1px: dikte lijn #333: kleur lijn - RGB value */
+}
+
+.other {
+    margin-bottom: 40px;
+}
+
+.author-box img {
+    height: 300px;
+    width: 250px;
+    border-radius: 50%; /*makes picture round*/
+    float: left;
+}
+
+.blog-post img {
+    height: 300px;
+    width: auto;
+    padding-bottom: 20px;
+}
+
+.date{
+    position: absolute;
+    top: 10px;
+    right: 30px;
+}
+
+/*CSS for text formating.
+CSS is written in rules; each rules consists of a selector and a declaration */
+/*CCS box model: 
+in html there are block elements and inline elements, block elements use the full width of the brower inforced line breaks. Headings and paragraphs are examples of block elements. You can't do nothing with inline elements, you can't change the height or width. For example images, links...
+All html can be seen as boxes. What a box model allows us to do is to define space between elements, and to edit border around elements. Box model consists of headings, borders, margins and the acctual content of the box for example text */
